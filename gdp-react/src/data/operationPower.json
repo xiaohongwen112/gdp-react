@@ -1,0 +1,373 @@
+{
+  "注释": "用户菜单权限配置树",
+  "menuTree": [
+    {
+      "id": "1",
+      "label": "数据维护",
+      "checked": false,
+      "children": [
+        {
+          "id": "1-1",
+          "label": "数据库管理",
+          "checked": false,
+          "parentID": "1",
+          "children": [
+            {
+              "id": "1-1-1",
+              "label": "查看",
+              "fatherID": "1-1",
+              "checked": false
+            },
+            {
+              "id": "1-1-2",
+              "label": "编辑",
+              "fatherID": "1-1",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "label": "同步表管理",
+          "checked": false,
+          "parentID": "1",
+          "children": [
+            {
+              "id": "1-2-1",
+              "label": "查看",
+              "fatherID": "1-2",
+              "checked": false
+            },
+            {
+              "id": "1-2-2",
+              "label": "编辑",
+              "fatherID": "1-2",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "label": "GDP配置与计算",
+      "checked": false,
+      "children": [
+        {
+          "id": "2-1",
+          "label": "数据配置",
+          "checked": false,
+          "parentID": "2",
+          "children": [
+            {
+              "id": "2-1-1",
+              "label": "查看",
+              "fatherID": "2-1",
+              "checked": false
+            },
+            {
+              "id": "2-1-2",
+              "label": "编辑",
+              "fatherID": "2-2",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "label": "GDP计算",
+          "checked": false,
+          "parentID": "2",
+          "children": [
+            {
+              "id": "2-2-1",
+              "label": "查看",
+              "fatherID": "2-2",
+              "checked": false
+            },
+            {
+              "id": "2-2-2",
+              "label": "编辑",
+              "fatherID": "2-2",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "label": "分劈计算",
+      "checked": false,
+      "children": [
+        {
+          "id": "3-1",
+          "label": "行业分劈配置",
+          "checked": false,
+          "parentID": "3",
+          "children": [
+            {
+              "id": "3-1-1",
+              "label": "查看",
+              "fatherID": "3-1",
+              "checked": false
+            },
+            {
+              "id": "3-1-2",
+              "label": "编辑",
+              "fatherID": "3-1",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "3-2",
+          "label": "分劈计算",
+          "parentID": "3",
+          "checked": false,
+          "children": [
+            {
+              "id": "3-2-1",
+              "label": "查看",
+              "fatherID": "3-2",
+              "checked": false
+            },
+            {
+              "id": "3-2-2",
+              "label": "编辑",
+              "fatherID": "3-2",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "label": "企业库配置",
+      "checked": false,
+      "children": [
+        {
+          "id": "4-1",
+          "label": "规上规下比例配置",
+          "checked": false,
+          "parentID": "4",
+          "children": [
+            {
+              "id": "4-1-1",
+              "label": "查看",
+              "fatherID": "4-1",
+              "checked": false
+            },
+            {
+              "id": "4-1-2",
+              "label": "编辑",
+              "fatherID": "4-1",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "4-2",
+          "label": "规下企业推算",
+          "checked": false,
+          "children": [
+            {
+              "id": "4-2-1",
+              "label": "查看",
+              "fatherID": "4-2",
+              "checked": false
+            },
+            {
+              "id": "4-2-2",
+              "label": "编辑",
+              "fatherID": "4-2",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "4-3",
+          "label": "企业合库",
+          "checked": false,
+          "parentID": "4",
+          "children": [
+            {
+              "id": "4-3-1",
+              "label": "查看",
+              "fatherID": "4-3",
+              "checked": false
+            },
+            {
+              "id": "4-3-2",
+              "label": "编辑",
+              "fatherID": "4-3",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "label": "数据调整",
+      "checked": false,
+      "children": [
+        {
+          "id": "5-1",
+          "label": "数据调整",
+          "checked": false,
+          "parentID": "5",
+          "children": [
+            {
+              "id": "5-1-1",
+              "label": "查看",
+              "fatherID": "5-1",
+              "checked": false
+            },
+            {
+              "id": "5-1-2",
+              "label": "编辑",
+              "fatherID": "5-1",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "label": "数据汇总",
+      "checked": false,
+      "children": [
+        {
+          "id": "6-1",
+          "label": "汇总数据源配置",
+          "checked": false,
+          "parentID": "6",
+          "children": [
+            {
+              "id": "6-1-1",
+              "label": "查看",
+              "fatherID": "6-1",
+              "checked": false
+            },
+            {
+              "id": "6-1-2",
+              "label": "编辑",
+              "fatherID": "6-1",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "6-2",
+          "label": "行业数据汇总",
+          "checked": false,
+          "parentID": "6",
+          "children": [
+            {
+              "id": "6-2-1",
+              "label": "查看",
+              "fatherID": "6-2",
+              "checked": false
+            },
+            {
+              "id": "6-2-2",
+              "label": "编辑",
+              "fatherID": "6-2",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "label": "系统管理",
+      "checked": false,
+      "children": [
+        {
+          "id": "7-1",
+          "label": "用户管理",
+          "checked": false,
+          "parentID": "7",
+          "children": [
+            {
+              "id": "7-1-1",
+              "label": "查看",
+              "fatherID": "7-1",
+              "checked": false
+            },
+            {
+              "id": "7-1-2",
+              "label": "编辑",
+              "fatherID": "7-1",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "7-2",
+          "label": "角色管理",
+          "checked": false,
+          "parentID": "7",
+          "children": [
+            {
+              "id": "7-2-1",
+              "label": "查看",
+              "fatherID": "7-2",
+              "checked": false
+            },
+            {
+              "id": "7-2-2",
+              "label": "编辑",
+              "fatherID": "7-2",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "7-3",
+          "label": "数据备份",
+          "checked": false,
+          "parentID": "7",
+          "children": [
+            {
+              "id": "7-3-1",
+              "label": "查看",
+              "fatherID": "7-3",
+              "checked": false
+            },
+            {
+              "id": "7-3-2",
+              "label": "编辑",
+              "fatherID": "7-3",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "7-4",
+          "label": "系统日志",
+          "checked": false,
+          "parentID": "7",
+          "children": [
+            {
+              "id": "7-4-1",
+              "label": "查看",
+              "fatherID": "7-4",
+              "checked": false
+            },
+            {
+              "id": "7-4-2",
+              "label": "编辑",
+              "fatherID": "7-4",
+              "checked": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

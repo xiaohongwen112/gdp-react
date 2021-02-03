@@ -1,0 +1,538 @@
+{
+  "注释": "左侧菜单目录",
+  "menu": [
+    {
+      "id": "per-1",
+      "label": "劳动力调查处",
+      "children": [
+        {
+          "id": "per-1-1",
+          "label": "劳动力",
+          "children": [
+            {
+              "id": 1,
+              "label": "网点备查库"
+            },
+            {
+              "id": 2,
+              "label": "网点查询库",
+              "query": {
+                "func_name": "create_labour_info",
+                "import_select": "year_month",
+                "is_repeat": "True"
+              }
+            },
+            {
+              "id": "sb-1",
+              "label": "调查设备",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "劳动力调查"
+              }
+            },
+            {
+              "id": "dcy-1",
+              "label": "调查员",
+              "query": {
+                "survey_project": "劳动力调查"
+              }
+            },
+            {
+              "id": "bsb-2",
+              "label": "社区-设备-调查员",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "劳动力调查"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "per-2",
+      "label": "居民收支调查处",
+      "children": [
+        {
+          "id": "per-2-1",
+          "label": "居民收支",
+          "children": [
+            {
+              "id": 3,
+              "label": "网点备查库"
+            },
+            {
+              "id": "4-1",
+              "label": "网点查询库",
+              "query": {
+                "func_name": "create_residents_income_info",
+                "import_select": "year_season",
+                "is_repeat": "True"
+              }
+            },
+            {
+              "id": "dcy-2",
+              "label": "调查员",
+              "query": {
+                "survey_project": "居民收支",
+                "api": "get_residents_investigator"
+              }
+            },
+            {
+              "id": "5",
+              "label": "社区-调查员",
+              "query": {
+                "func_name": "create_residents_investigator_info"
+              }
+            }
+          ]
+        },
+        {
+          "id": "per-2-2",
+          "label": "农户固投",
+          "children": [
+            {
+              "id": "4-2",
+              "label": "网点查询库",
+              "query": {
+                "func_name": "create_residents_income_info",
+                "is_investment": "True",
+                "import_select": "year_season",
+                "is_repeat": "True"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "per-3",
+      "label": "住户监测处",
+      "children": [
+        {
+          "id": "per-3-1",
+          "label": "农民工监测",
+          "children": [
+            {
+              "id": "6-1",
+              "label": "网点查询库",
+              "query": {
+                "func_name": "create_house_monitor_info",
+                "import_select": "year_season",
+                "specialized_type": "农民工监测",
+                "is_repeat": "True"
+              }
+            },
+            {
+              "id": "sb-3",
+              "label": "调查设备",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农民工监测"
+              }
+            },
+            {
+              "id": "dcy-3",
+              "label": "调查员",
+              "query": {
+                "survey_project": "农民工监测"
+              }
+            },
+            {
+              "id": "bsb-4",
+              "label": "网点-设备-调查员",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农民工监测"
+              }
+            }
+          ]
+        },
+        {
+          "id": "per-3-2",
+          "label": "退耕还林",
+          "children": [
+            {
+              "id": "6-2",
+              "label": "网点查询库",
+              "query": {
+                "func_name": "create_house_monitor_info",
+                "import_select": "YEAR_12",
+                "specialized_type": "退耕还林（草）"
+              }
+            }
+          ]
+        },
+        {
+          "id": "per-3-3",
+          "label": "农民工市民化",
+          "children": [
+            {
+              "id": "7",
+              "label": "网点查询库",
+              "query": {
+                "func_name": "create_workers_townspeople_info",
+                "import_select": "YEAR_12"
+              }
+            },
+            {
+              "id": "sb-5",
+              "label": "调查设备",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农民工市民化"
+              }
+            },
+            {
+              "id": "dcy-4",
+              "label": "调查员",
+              "query": {
+                "survey_project": "农民工市民化"
+              }
+            },
+            {
+              "id": "bsb-6",
+              "label": "社区-设备-调查员",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农民工市民化"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "per-4",
+      "label": "农业农村调查处",
+      "children": [
+        {
+          "id": "per-4-1",
+          "label": "粮食调查网点",
+          "children": [
+            {
+              "id": "per-4-1-1",
+              "label": "全面调查",
+              "children": [
+                {
+                  "id": "8-1",
+                  "label": "秋粮网点",
+                  "query": {
+                    "func_name": "create_food_overall_info",
+                    "import_select": "YEAR_10",
+                    "is_autumn": "True"
+                  }
+                },
+                {
+                  "id": "8-2",
+                  "label": "夏粮网点",
+                  "query": {
+                    "func_name": "create_food_overall_info",
+                    "import_select": "YEAR_6",
+                    "is_summer": "True"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "per-4-1-2",
+              "label": "抽样调查",
+              "children": [
+                {
+                  "id": "9-1",
+                  "label": "秋粮网点",
+                  "query": {
+                    "func_name": "create_food_sample_info",
+                    "import_select": "YEAR_10",
+                    "is_autumn": "True"
+                  }
+                },
+                {
+                  "id": "9-2",
+                  "label": "夏粮网点",
+                  "query": {
+                    "func_name": "create_food_sample_info",
+                    "import_select": "YEAR_6",
+                    "is_summer": "True"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sb-7",
+              "label": "调查设备",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农业遥感"
+              }
+            },
+            {
+              "id": "dcy-5",
+              "label": "调查员",
+              "query": {
+                "survey_project": "农业遥感"
+              }
+            },
+            {
+              "id": "bsb-13",
+              "label": "社区-设备-调查员",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农业遥感"
+              }
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "label": "农产品生产价格",
+          "query": {
+            "func_name": "create_food_produce_price_info",
+            "import_select": "year_season"
+          }
+        },
+        {
+          "id": 11,
+          "label": "主要农产品中间消耗",
+          "query": {
+            "func_name": "create_produce_consume_info",
+            "import_select": "year_ban"
+          }
+        },
+        {
+          "id": "per-4-2",
+          "label": "农业畜牧调查",
+          "children": [
+            {
+              "id": "per-4-2-1",
+              "label": "猪",
+              "children": [
+                {
+                  "id": "12-1",
+                  "label": "季度",
+                  "query": {
+                    "func_name": "create_pig_survey_info",
+                    "import_select": "year_season",
+                    "is_month": "False"
+                  }
+                },
+                {
+                  "id": "12-2",
+                  "label": "月度",
+                  "query": {
+                    "func_name": "create_pig_survey_info",
+                    "import_select": "year_month",
+                    "is_month": "True",
+                    "category": "True"
+                  }
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "label": "畜牧（除猪外季度）",
+              "query": {
+                "func_name": "create_animal_husbandry_info",
+                "import_select": "year_season"
+              }
+            },
+            {
+              "id": 14,
+              "label": "大型畜禽监测养殖场户（抽样）",
+              "query": {
+                "func_name": "create_large_fowl_farm_info",
+                "import_select": "YEAR_12"
+              }
+            }
+          ]
+        },
+        {
+          "id": "per-4-3",
+          "label": "农产品集贸市场价格",
+          "children": [
+            {
+              "id": 15,
+              "label": "调查网点",
+              "query": {
+                "func_name": "create_food_market_price_info",
+                "import_select": "YEAR_12"
+              }
+            },
+            {
+              "id": "sb-8",
+              "label": "调查设备",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农产品集贸市场价格"
+              }
+            },
+            {
+              "id": "dcy-6",
+              "label": "调查员",
+              "query": {
+                "survey_project": "农产品集贸市场价格"
+              }
+            },
+            {
+              "id": "bsb-9",
+              "label": "社区-设备-调查员",
+              "query": {
+                "func_name": "create_equipment_info",
+                "survey_project": "农产品集贸市场价格"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "per-5",
+      "label": "消费价格调查处",
+      "children": [
+        {
+          "id": 16,
+          "label": "网点查询库",
+          "query": {
+            "func_name": "create_cpi_info",
+            "import_select": "year_month"
+          }
+        },
+        {
+          "id": "cpisb-1",
+          "label": "设备调查",
+          "query": {
+            "func_name": "create_CPI_equipment_info",
+            "survey_project": "消费价格"
+          }
+        },
+        {
+          "id": "cpidcy-7",
+          "label": "调查员",
+          "query": {
+            "survey_project": "消费价格",
+            "api": "get_cpi_investigator"
+          }
+        },
+        {
+          "id": "cpibsb-2",
+          "label": "网点-设备-调查员",
+          "query": {
+            "func_name": "create_CPI_equipment_info",
+            "survey_project": "消费价格"
+          }
+        }
+      ]
+    },
+    {
+      "id": "per-6",
+      "label": "生产价格调查处",
+      "children": [
+        {
+          "id": "17-1",
+          "label": "工业生产者价格",
+          "query": {
+            "func_name": "create_producer_price_info",
+            "category": "工业生产者价格",
+            "import_select": "year_month"
+          }
+        },
+        {
+          "id": "17-2",
+          "label": "运输业价格",
+          "query": {
+            "func_name": "create_producer_price_info",
+            "category": "运输业价格",
+            "import_select": "year_season"
+          }
+        },
+        {
+          "id": "17-3",
+          "label": "快递业价格",
+          "query": {
+            "func_name": "create_producer_price_info",
+            "category": "快递业价格",
+            "import_select": "year_season"
+          }
+        },
+        {
+          "id": "17-4",
+          "label": "房地产价格（二手房）",
+          "query": {
+            "func_name": "create_producer_price_info",
+            "category": "房地产价格（二手房）",
+            "import_select": "year_month"
+          }
+        }
+      ]
+    },
+    {
+      "id": "per-7",
+      "label": "专项调查处",
+      "children": [
+        {
+          "id": "per-7-1",
+          "label": "采购经理名录",
+          "children": [
+            {
+              "id": "18-1",
+              "label": "制造业",
+              "query": {
+                "func_name": "create_purchase_manager_info",
+                "import_select": "year_month",
+                "is_manufacture": "True"
+              }
+            },
+            {
+              "id": "18-2",
+              "label": "非制造业",
+              "query": {
+                "func_name": "create_purchase_manager_info",
+                "import_select": "year_month",
+                "is_manufacture": "False"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sb-10",
+          "label": "调查设备",
+          "query": {
+            "func_name": "create_equipment_info",
+            "survey_project": "专项调查"
+          }
+        },
+        {
+          "id": "dcy-8",
+          "label": "调查员",
+          "query": {
+            "survey_project": "专项调查"
+          }
+        },
+        {
+          "id": "bsb-10",
+          "label": "社区-设备-调查员",
+          "query": {
+            "func_name": "create_equipment_info",
+            "survey_project": "专项调查"
+          }
+        }
+      ]
+    },
+    {
+      "maintain": true,
+      "id": "per-8",
+      "label": "区域经济处",
+      "children": [
+        {
+          "id": "sb-12",
+          "label": "调查设备",
+          "query": {
+            "func_name": "create_equipment_info",
+            "survey_project": "区域经济"
+          }
+        }
+      ]
+    }
+  ]
+}
